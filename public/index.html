@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <h1>Empleados</h1>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Legajo</th>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sector</th>
+            <th>Fecha Ingreso</th>
+            <th>Activo</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody id="contenido"></tbody>
+      </table>
+    </div>
+    <hr />
+    <h1>Nuevo Empleado</h1>
+    <br />
+    <form id="formulario" method="POST">
+      <label for="legajo">Legajo</label><br>
+      <input
+        type="number"
+        name="legajo"
+        id="legajo"
+        class="field"
+        required
+      /><br />
+      <label for="apellido">Apellido</label><br>
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        class="field"
+        required
+      /><br />
+      <label for="nombre">Nombre</label><br>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        class="field"
+        required
+      /><br />
+      <label for="dni">DNI</label><br>
+      <input
+        type="number"
+        name="dni"
+        id="dni"
+        class="field"
+        onKeyPress="if(this.value.length==8) return false;"
+        required
+      /><br />
+      <label for="sector">Sector</label><br>
+      <select name="sector" id="sector" class="field" required>
+        <option value="">Seleciona un sector</option>
+        <option value="RRHH">RRHH</option>
+        <option value="Tesorería">Tesorería</option>
+        <option value="Administración">Administración</option>
+        <option value="Comunicación">Comunicación</option>
+        <option value="Gerencia">Gerencia</option>
+        <option value="Informática">Informática</option></select
+      ><br />
+      <label for="fecha">Fecha</label><br>
+      <input type="date" class="field" name="fecha" id="fecha" required /><br /><br>
+      <input type="radio" id="0" name="activo" value="0" />
+      <label for="0">No Activo</label>
+      <input type="radio" id="1" name="activo" value="1" required />
+      <label for="1">Activo</label><br /><br>
+      <div class="center-content">
+        <button
+          type="submit"
+          class="btn btn-orange"
+          style="width: 280px;"
+        >
+          Guardar
+        </button>
+      </div>
+    </form>
+
+    <script src="js/listar.js"></script>
+    <script src="js/guardar.js"></script>
+    <script src="js/eliminar.js"></script>
+  </body>
+</html>

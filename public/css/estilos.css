@@ -1,0 +1,114 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 50px auto;
+  width: 800px;
+}
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+thead {
+  background-color: #e28539;
+  color: white;
+  border-bottom: solid 3px #915303;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:hover td {
+  background-color: #e79259;
+  color: white;
+}
+
+form {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select {
+  outline: none;
+  border: 0;
+}
+
+.field {
+  border: solid 1px #ccc;
+  padding: 7px;
+  width: 280px;
+}
+
+.field:focus {
+  border-color: #e28539;
+}
+
+.btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.btn-orange {
+  color: white;
+  background-color: #e28539;
+}
+
+.btn-orange:hover {
+  background-color: #e79259;
+}
+
+.btn-orange:active {
+  background-color: #915303;
+}
+
+.btn-red {
+  color: white;
+  background-color: #e23f39;
+}
+
+.btn-red:hover {
+  background-color: #e75959;
+}
+
+.btn-red:active {
+  background-color: #910303;
+}
+
+.btn-blue {
+  color: white;
+  background-color: #3996e2;
+}
+
+.btn-blue:hover {
+  background-color: #59bae7;
+}
+
+.btn-blue:active {
+  background-color: #036491;
+}
+
+.center-content {
+  text-align: center;
+}
